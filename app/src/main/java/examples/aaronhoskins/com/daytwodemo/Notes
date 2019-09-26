@@ -1,0 +1,58 @@
+
+In Kotlin we have two different ways of declaring variables
+    var - Mutable
+    val - immutable (final in java)
+        2 different types of val
+            val - set at runtime
+            const val - set at compile time
+    - Kotlin is using inferred typing
+        - The data type is set when instantiated, but is not change after
+    - To initialize value at later in object
+        For var
+            - lateinit var
+                - a promise that this variable will be set before use
+                - We must designate type
+                - Can not be set to null
+        For val
+            - lazy initialization
+                - syntax val name by lazy {<What to init to>}
+                - When the value is first called, it will run the fun body
+                    with the brackets and initialize to that value
+    Inheritance in Kotlin
+        - By default, all objects and classes are CLOSED
+            - Can not inherit that class
+        - class
+            - Multiple instances allowed
+            - They can be opened (can be made inheritable)
+                - open is the keyword
+                    open class className{}
+        - object
+            - the way to make a SINGLETON class in kotlin
+        - data class
+            - Simple containers for class information
+        - interface
+            - Callbacks
+            - Can have COMPANION OBJECTS (static)
+Control and Looping statements
+    - while, if/else, do..while are the same as java
+        while(condition) {}
+        if(condition){}else{}
+        do{...}while(condition)
+    - switch == when
+            when(comparable variable/value) {
+                <EQUAL TO> -> <action>
+                else -> <action>
+            }
+    - for loops
+        - ranges and steps
+            for(i in 0..10) {}
+            for(i in 0..10 stepBy 2){}
+            for(i in 10 downTo 0){}
+    - for each
+        - in kotlin,  we call the forEach method on the collection
+            - it = current value
+                val list = ArrayList<>()
+                list.forEach{ Log.d("TAG", it)}
+
+                JAVA eq.
+                for(String it : list){}

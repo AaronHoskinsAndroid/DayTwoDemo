@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DayTwoDemo</string>
+    <string name="name_hint">Please enter your name</string>
+    <string name="address_hint">Please enter street address</string>
+    <string name="city_hint">City</string>
+    <string name="state_hint">ST</string>
+    <string name="zip_hint">Zip</string>
+    <string name="produce_label">Produce Label</string>
+</resources>
